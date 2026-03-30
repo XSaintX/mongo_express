@@ -144,5 +144,3 @@ curl -X POST http://localhost:5000/api/places ^
 - **401/403 on protected routes**: make sure you’re sending `Authorization: Bearer <token>` from login/signup.
 - **Geocoding fails / ZERO_RESULTS**: verify your `API_KEY` and that the address is valid.
 - **Mongo connection fails**: verify the `url` connection string and network access (Atlas IP allowlist, etc.).
-
-o **not** commit real secrets (MongoDB URIs, API keys) to git. Rotate any exposed credentials and keep `.env` local.
